@@ -1,6 +1,6 @@
 
-variable "AWS_ACCESS_KEY" {}
-variable "AWS_SECRET_KEY" {}
+variable "AWS_ACCESS_KEY" {} #variables have to be specified in terraform.tfvars ot vars.tf file 
+variable "AWS_SECRET_KEY" {} #here secret and access key are varaibles.
 
 provider "aws" {
   access_key = "YOUR ACCESS KEY "
