@@ -19,4 +19,11 @@ resource "aws_instance" "web" {
   ami           = "your-ami-id"
   instance_type = "t2.micro"
   key_name = "${aws_key_pair.deployer-key.key_name}"
+  iam_instance_profile = "${aws_iam_instance_profile.ec2-role.name}" 
+  # instance profile is  used while ec2 with ec2role and giving permissions via s3 .here s3.tf and iam.tf andaws.tf are used. 
+   tags {
+      Name = "Test-AMI"
+       }
+
+
 }
