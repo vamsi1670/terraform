@@ -1,6 +1,7 @@
 SSH into your cloud server
 sudo yum install -y zip unzip (if these are not installed)
-wget <copy the latest link to install terraform >
+wget <copy the latest link to install terraform > 
+    use this link to download https://www.terraform.io/downloads.html
 unzip <the tar file afterdownloading>
 sudo mv terraform /usr/local/bin/
 Confirm terraform binary is accessible: terraform --version
